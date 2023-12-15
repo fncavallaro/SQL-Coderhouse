@@ -1,0 +1,25 @@
+Para la correcta instalacion e implementación de la base de datos correspondiente a pizzeria, en primer lugar (paso 0) debemos ingresar a la carpeta que contiene los archivos SQL y, en el
+siguiente orden, ejecutar/abrir los pasos/archivos/carpetas que se detallan a continuación:
+
+01 - Creación de Tablas: Este archivo contendrá no solo las sentencias de creación de schema y tablas iniciales de la base de datos, sino tambien las tablas Log correspondientes a 
+auditoría y las relaciones entre tablas.
+
+02 - Importación de datos: Esta carpeta contiene todas las tablas (en formato csv) para realizar la correspondiente importación de la información contenida en las mismas a las tablas
+creadas en el punto anterior.
+
+03 - Vistas: En esta carpeta se encuenta el archivo de creacion de las 5 vistas de la base de datos. Ademas, sobre el final, las mismas pueden ser consultadas.
+
+04 - Funciones: Mediante la ejecución del archivo contenido en esta carpeta se crean las 2 funciones correspondientes a la base de datos, además de verificarlas a traves de la sentencia 
+SELECT.
+
+05 - Stored Procedures: Carpeta que contiene el Archivo que posee las sentencias de creación de los 4 Stored procedures que componen la base de datos. Además posee el llamado de cada uno 
+para verificar su correcto funcionamiento.
+
+06 - Triggers: Creación de los Triggers que corresponden a las 3 tablas LOG que creamos en el paso 1. Son 4 Triggers en total, en este archivo se crean y se consultan luego para asegurar el
+funcionamiento correcto de los mismos.
+
+07 - Usuarios (DCL): Creación de usuarios, otorgamiento de permisos correspondientes a cada uno y sentencias de eliminación de ambos.
+
+08 - Transacciones (TCL): Carpeta que contiene 2 archivos correspondientes a transacciones de agregado de datos a la tabla "orders" y de eliminacion de registro de "inventory".
+
+09 - Backup (Data Import): Archivos de Backup de datos, con estructura y sin estructura del Schema pizzeria.
